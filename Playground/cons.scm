@@ -1,5 +1,4 @@
 ; cons
-; a pair of values
 
 (define (con x y)
   (define (dispatch msg)

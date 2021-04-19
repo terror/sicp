@@ -1,7 +1,5 @@
-def main(x):
-    x.sort()
-    return (x[-1] * x[-1]) + (x[-2] * x[-2])
-
+def main(a, b, c):
+    return (max(a, b, c) ** 2) + ((sum([a, b, c]) - (max(a, b, c) + min(a, b, c))) ** 2)
 
 if __name__ == '__main__':
-    print(main([1, 2, 3, 4, 5]))  # 41
+    print(main(2, 3, 4)) # 25
